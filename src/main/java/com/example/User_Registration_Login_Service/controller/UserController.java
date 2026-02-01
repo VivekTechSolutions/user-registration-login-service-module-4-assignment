@@ -1,11 +1,7 @@
 package com.example.User_Registration_Login_Service.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import com.example.User_Registration_Login_Service.dto.request.UserLoginRequest;
 import com.example.User_Registration_Login_Service.dto.request.UserRegistrationRequest;
@@ -20,21 +16,20 @@ public class UserController {
 
     private final UserService userService;
 
-    @Autowired
     public UserController(UserService userService) {
         this.userService = userService;
     }
 
-    // 1Register user
+    // Register user
     @PostMapping("/register")
     public ResponseEntity<UserResponse> registerUser(
             @Valid @RequestBody UserRegistrationRequest request) {
 
         UserResponse response = userService.registerUser(request);
-        return ResponseEntity.ok(response);
+        return ResponseEntity.status(201).body(response);
     }
 
-    //  Login user
+    // Login user
     @PostMapping("/login")
     public ResponseEntity<UserResponse> loginUser(
             @Valid @RequestBody UserLoginRequest request) {

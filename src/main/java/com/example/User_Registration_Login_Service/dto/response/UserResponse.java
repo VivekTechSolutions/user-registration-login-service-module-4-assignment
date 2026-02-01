@@ -13,7 +13,7 @@ public class UserResponse {
         this.email = email;
     }
 
-    // Getters only (no password)
+    // Getters only 
     public Long getId() {
         return id;
     }
