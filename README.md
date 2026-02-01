@@ -1,8 +1,8 @@
 # 🚀 User Registration & Login Servic
-======================================
+
 
 ## 📌 Overview
----------------
+
 
 This project implements a **User Registration and Login API** using Spring Boot, focusing on **robust exception handling, structured logging, and production-ready logging configuration** as required in **Module 4 – Assignment Set 2** and **Module 5 (Prod readiness)**.
 
