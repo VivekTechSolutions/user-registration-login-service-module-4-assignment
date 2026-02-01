@@ -1,0 +1,33 @@
+2026-01-31 19:53:52 INFO  c.e.U.UserRegistrationLoginServiceModule4Application - Starting UserRegistrationLoginServiceModule4Application using Java 21.0.9 with PID 7264 (C:\Users\vivek.kumar\Desktop\Assignment\User-Registration-Login-Service-module-4\target\classes started by vivek.kumar in C:\Users\vivek.kumar\Desktop\Assignment\User-Registration-Login-Service-module-4)
+2026-01-31 19:53:52 INFO  c.e.U.UserRegistrationLoginServiceModule4Application - No active profile set, falling back to 1 default profile: "default"
+2026-01-31 19:53:52 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-01-31 19:53:54 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-01-31 19:53:54 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-31 19:53:54 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-01-31 19:53:54 INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-01-31 19:53:54 INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.1.Final
+2026-01-31 19:53:55 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-01-31 19:53:56 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4be460e5
+2026-01-31 19:53:56 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-01-31 19:53:56 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/UserRegistration-module-4]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.44
+	Default catalog/schema: UserRegistration-module-4/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-01-31 19:53:58 INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-01-31 19:53:59 WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-01-31 19:53:59 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-01-31 19:53:59 INFO  c.e.U.UserRegistrationLoginServiceModule4Application - Started UserRegistrationLoginServiceModule4Application in 8.152 seconds (process running for 8.558)
+2026-01-31 19:54:00 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-31 19:54:01 INFO  c.e.U.service.imp.UserServiceImpl - User registration attempt for username: vivek
+2026-01-31 19:54:01 WARN  c.e.U.service.imp.UserServiceImpl - Registration failed: Username already exists [vivek]
+2026-01-31 19:54:01 WARN  c.e.U.e.h.GlobalExceptionHandler - User registration failed: Username already exists
+2026-01-31 19:54:38 INFO  c.e.U.service.imp.UserServiceImpl - User registration attempt for username: vivek singh
+2026-01-31 19:54:38 INFO  c.e.U.service.imp.UserServiceImpl - User registered successfully with userId: 2
