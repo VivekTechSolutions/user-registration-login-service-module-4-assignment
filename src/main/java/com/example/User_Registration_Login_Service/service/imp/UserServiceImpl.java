@@ -2,6 +2,7 @@ package com.example.User_Registration_Login_Service.service.imp;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import com.example.User_Registration_Login_Service.dto.request.UserLoginRequest;
@@ -16,21 +17,21 @@ import com.example.User_Registration_Login_Service.service.UserService;
 @Service
 public class UserServiceImpl implements UserService {
 
-    // Logger for service-layer business flow (no sensitive data logged)
-    private static final Logger logger =
-            LoggerFactory.getLogger(UserServiceImpl.class);
+    // Logger used to track application flow and important events without logging sensitive data
+    private static final Logger logger = LoggerFactory.getLogger(UserServiceImpl.class);
 
     private final UserRepository userRepository;
+    private final PasswordEncoder passwordEncoder;
 
-    public UserServiceImpl(UserRepository userRepository) {
+    public UserServiceImpl(UserRepository userRepository, PasswordEncoder passwordEncoder) {
         this.userRepository = userRepository;
+        this.passwordEncoder = passwordEncoder;
     }
 
-    // Handles user registration with validation and safe logging
     @Override
     public UserResponse registerUser(UserRegistrationRequest request) {
 
-    	// Log registration attempt with username
+        // Logs user registration attempt for traceability
         logger.info("User registration attempt for username: {}", request.getUsername());
 
         if (userRepository.existsByUsername(request.getUsername())) {
@@ -43,14 +44,17 @@ public class UserServiceImpl implements UserService {
             throw new UserAlreadyExistsException("Email already exists");
         }
 
+        String encodedPassword = passwordEncoder.encode(request.getPassword());
+
         User user = new User(
                 request.getUsername(),
                 request.getEmail(),
-                request.getPassword()
+                encodedPassword
         );
 
         User savedUser = userRepository.save(user);
 
+        // Logs successful registration event with generated user ID
         logger.info("User registered successfully with userId: {}", savedUser.getId());
 
         return new UserResponse(
@@ -60,10 +64,10 @@ public class UserServiceImpl implements UserService {
         );
     }
 
-    // Handles user login with credential validation and contextual logging
     @Override
     public UserResponse loginUser(UserLoginRequest request) {
 
+        // Logs login attempt using username (password is never logged)
         logger.info("Login attempt for username: {}", request.getUsername());
 
         User user = userRepository.findByUsername(request.getUsername())
@@ -72,12 +76,11 @@ public class UserServiceImpl implements UserService {
                     return new UserNotFoundException("User not found");
                 });
 
-        if (!user.getPassword().equals(request.getPassword())) {
+        if (!passwordEncoder.matches(request.getPassword(), user.getPassword())) {
             logger.warn("Login failed: Invalid credentials for username [{}]", request.getUsername());
             throw new UserNotFoundException("Invalid credentials");
         }
 
-     // Log login attempt using username
         logger.info("Login successful for userId: {}", user.getId());
 
         return new UserResponse(

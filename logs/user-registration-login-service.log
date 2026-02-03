@@ -1,31 +1,15 @@
-2026-02-01 05:22:02 WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9h25m10s407ms666µs300ns).
-2026-02-01 05:38:20 WARN  c.e.U.e.h.GlobalExceptionHandler - Validation failed for fields: [username]
-2026-02-01 05:38:43 WARN  c.e.U.e.h.GlobalExceptionHandler - Validation failed for fields: [username]
-2026-02-01 05:38:46 WARN  c.e.U.e.h.GlobalExceptionHandler - Validation failed for fields: [username]
-2026-02-01 05:38:53 WARN  c.e.U.e.h.GlobalExceptionHandler - Validation failed for fields: [username]
-2026-02-01 05:39:09 INFO  c.e.U.service.imp.UserServiceImpl - Login attempt for username: vivekkumar
-2026-02-01 05:39:09 WARN  c.e.U.service.imp.UserServiceImpl - Login failed: User not found [vivekkumar]
-2026-02-01 05:39:09 WARN  c.e.U.e.h.GlobalExceptionHandler - User login failed: User not found
-2026-02-01 05:39:11 INFO  c.e.U.service.imp.UserServiceImpl - Login attempt for username: vivekkumar
-2026-02-01 05:39:11 WARN  c.e.U.service.imp.UserServiceImpl - Login failed: User not found [vivekkumar]
-2026-02-01 05:39:11 WARN  c.e.U.e.h.GlobalExceptionHandler - User login failed: User not found
-2026-02-01 05:40:44 INFO  c.e.U.service.imp.UserServiceImpl - Login attempt for username: vivek singh
-2026-02-01 05:40:44 INFO  c.e.U.service.imp.UserServiceImpl - Login successful for userId: 2
-2026-02-01 05:45:35 WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m34s978ms436µs400ns).
-2026-02-01 05:57:31 INFO  c.e.U.service.imp.UserServiceImpl - Login attempt for username: vivek singh
-2026-02-01 05:57:31 INFO  c.e.U.service.imp.UserServiceImpl - Login successful for userId: 2
-2026-02-01 06:05:45 INFO  c.e.U.UserRegistrationLoginServiceModule4Application - Starting UserRegistrationLoginServiceModule4Application using Java 21.0.9 with PID 16736 (C:\Users\vivek.kumar\Desktop\Assignment\User-Registration-Login-Service-module-4\target\classes started by vivek.kumar in C:\Users\vivek.kumar\Desktop\Assignment\User-Registration-Login-Service-module-4)
-2026-02-01 06:05:45 INFO  c.e.U.UserRegistrationLoginServiceModule4Application - No active profile set, falling back to 1 default profile: "default"
-2026-02-01 06:05:45 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
-2026-02-01 06:05:46 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2026-02-01 06:05:47 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-02-01 06:05:47 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.15]
-2026-02-01 06:05:47 INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-02-01 06:05:47 INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.1.Final
-2026-02-01 06:05:48 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2026-02-01 06:05:48 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6e4e60f5
-2026-02-01 06:05:48 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2026-02-01 06:05:49 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+2026-02-03 08:56:15 INFO  c.e.U.UserRegistrationLoginServiceModule4Application - Starting UserRegistrationLoginServiceModule4Application using Java 21.0.9 with PID 26332 (C:\Users\vivek.kumar\Desktop\Assignment\User-Registration-Login-Service-module-4\target\classes started by vivek.kumar in C:\Users\vivek.kumar\Desktop\Assignment\User-Registration-Login-Service-module-4)
+2026-02-03 08:56:15 INFO  c.e.U.UserRegistrationLoginServiceModule4Application - No active profile set, falling back to 1 default profile: "default"
+2026-02-03 08:56:15 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-02-03 08:56:16 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-02-03 08:56:16 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-03 08:56:16 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-02-03 08:56:16 INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-03 08:56:16 INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.1.Final
+2026-02-03 08:56:17 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-03 08:56:17 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@11e24688
+2026-02-03 08:56:17 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-03 08:56:17 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
 	Database JDBC URL [jdbc:mysql://localhost:3306/UserRegistration-module-4]
 	Database driver: MySQL Connector/J
 	Database dialect: MySQLDialect
@@ -37,13 +21,46 @@
 	Pool: DataSourceConnectionProvider
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-02-01 06:05:50 INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-02-01 06:05:50 WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-02-01 06:05:51 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2026-02-01 06:05:51 WARN  o.s.b.w.s.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
-2026-02-01 06:05:51 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2026-02-01 06:05:51 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2026-02-01 06:05:51 ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+2026-02-03 08:56:18 INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-03 08:56:18 WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-03 08:56:18 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-02-03 08:56:18 INFO  c.e.U.UserRegistrationLoginServiceModule4Application - Started UserRegistrationLoginServiceModule4Application in 4.323 seconds (process running for 4.779)
+2026-02-03 09:19:10 INFO  c.e.U.UserRegistrationLoginServiceModule4Application - Starting UserRegistrationLoginServiceModule4Application using Java 21.0.9 with PID 1692 (C:\Users\vivek.kumar\Desktop\Assignment\User-Registration-Login-Service-module-4\target\classes started by vivek.kumar in C:\Users\vivek.kumar\Desktop\Assignment\User-Registration-Login-Service-module-4)
+2026-02-03 09:19:10 INFO  c.e.U.UserRegistrationLoginServiceModule4Application - No active profile set, falling back to 1 default profile: "default"
+2026-02-03 09:19:10 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-02-03 09:19:11 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-02-03 09:19:11 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-03 09:19:11 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-02-03 09:19:11 INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-03 09:19:11 INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.1.Final
+2026-02-03 09:19:12 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-03 09:19:12 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3f4ac3fc
+2026-02-03 09:19:12 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-03 09:19:12 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/UserRegistration-module-4]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.44
+	Default catalog/schema: UserRegistration-module-4/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-03 09:19:13 INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-03 09:19:13 WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-03 09:19:14 WARN  o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 5290ce09-78db-4054-89eb-92b8be6b62e4
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-02-03 09:19:14 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-02-03 09:19:14 WARN  o.s.b.w.s.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-02-03 09:19:14 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-03 09:19:14 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-02-03 09:19:14 ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
 
 ***************************
 APPLICATION FAILED TO START
@@ -57,11 +74,404 @@ Action:
 
 Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
 
-2026-02-01 06:06:00 INFO  c.e.U.service.imp.UserServiceImpl - Login attempt for username: vivek singh
-2026-02-01 06:06:00 INFO  c.e.U.service.imp.UserServiceImpl - Login successful for userId: 2
-2026-02-01 06:07:21 INFO  c.e.U.service.imp.UserServiceImpl - Login attempt for username: vivek singh
-2026-02-01 06:07:21 WARN  c.e.U.service.imp.UserServiceImpl - Login failed: Invalid credentials for username [vivek singh]
-2026-02-01 06:07:21 WARN  c.e.U.e.h.GlobalExceptionHandler - User login failed: Invalid credentials
-2026-02-01 06:18:35 INFO  c.e.U.service.imp.UserServiceImpl - Login attempt for username: vivek singh
-2026-02-01 06:18:35 WARN  c.e.U.service.imp.UserServiceImpl - Login failed: Invalid credentials for username [vivek singh]
-2026-02-01 06:18:35 WARN  c.e.U.e.h.GlobalExceptionHandler - User login failed: Invalid credentials
+2026-02-03 09:19:25 INFO  c.e.U.UserRegistrationLoginServiceModule4Application - Starting UserRegistrationLoginServiceModule4Application using Java 21.0.9 with PID 6168 (C:\Users\vivek.kumar\Desktop\Assignment\User-Registration-Login-Service-module-4\target\classes started by vivek.kumar in C:\Users\vivek.kumar\Desktop\Assignment\User-Registration-Login-Service-module-4)
+2026-02-03 09:19:25 INFO  c.e.U.UserRegistrationLoginServiceModule4Application - No active profile set, falling back to 1 default profile: "default"
+2026-02-03 09:19:25 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-02-03 09:19:26 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-02-03 09:19:26 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-03 09:19:26 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-02-03 09:19:27 INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-03 09:19:27 INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.1.Final
+2026-02-03 09:19:27 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-03 09:19:27 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@18b758cc
+2026-02-03 09:19:27 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-03 09:19:27 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/UserRegistration-module-4]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.44
+	Default catalog/schema: UserRegistration-module-4/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-03 09:19:28 INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-03 09:19:29 WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-03 09:19:29 WARN  o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: f60f8008-b1a2-41e4-b31a-ac1c196c5bf2
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-02-03 09:19:29 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-02-03 09:19:29 INFO  c.e.U.UserRegistrationLoginServiceModule4Application - Started UserRegistrationLoginServiceModule4Application in 4.819 seconds (process running for 5.276)
+2026-02-03 09:21:29 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-03 09:22:59 INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-02-03 09:22:59 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-02-03 09:22:59 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-03 09:22:59 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-02-03 09:22:59 INFO  c.e.U.UserRegistrationLoginServiceModule4Application - Starting UserRegistrationLoginServiceModule4Application using Java 21.0.9 with PID 6168 (C:\Users\vivek.kumar\Desktop\Assignment\User-Registration-Login-Service-module-4\target\classes started by vivek.kumar in C:\Users\vivek.kumar\Desktop\Assignment\User-Registration-Login-Service-module-4)
+2026-02-03 09:22:59 INFO  c.e.U.UserRegistrationLoginServiceModule4Application - No active profile set, falling back to 1 default profile: "default"
+2026-02-03 09:22:59 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-02-03 09:22:59 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-03 09:22:59 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-02-03 09:22:59 INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-03 09:22:59 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2026-02-03 09:22:59 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7bd48a1a
+2026-02-03 09:22:59 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2026-02-03 09:22:59 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/UserRegistration-module-4]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.44
+	Default catalog/schema: UserRegistration-module-4/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-03 09:23:00 INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-03 09:23:00 WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-03 09:23:00 WARN  o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 6123a136-2823-4f05-bf85-44b996df457f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-02-03 09:23:00 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-02-03 09:23:00 INFO  c.e.U.UserRegistrationLoginServiceModule4Application - Started UserRegistrationLoginServiceModule4Application in 0.837 seconds (process running for 215.855)
+2026-02-03 09:23:17 INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-02-03 09:23:17 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-02-03 09:23:17 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2026-02-03 09:23:17 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2026-02-03 09:23:58 INFO  c.e.U.UserRegistrationLoginServiceModule4Application - Starting UserRegistrationLoginServiceModule4Application using Java 21.0.9 with PID 6168 (C:\Users\vivek.kumar\Desktop\Assignment\User-Registration-Login-Service-module-4\target\classes started by vivek.kumar in C:\Users\vivek.kumar\Desktop\Assignment\User-Registration-Login-Service-module-4)
+2026-02-03 09:23:58 INFO  c.e.U.UserRegistrationLoginServiceModule4Application - No active profile set, falling back to 1 default profile: "default"
+2026-02-03 09:23:58 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-02-03 09:23:58 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-03 09:23:58 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-02-03 09:23:58 INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-03 09:23:58 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2026-02-03 09:23:58 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7b2b7be5
+2026-02-03 09:23:58 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2026-02-03 09:23:58 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/UserRegistration-module-4]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.44
+	Default catalog/schema: UserRegistration-module-4/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-03 09:23:58 INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-03 09:23:59 WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-03 09:23:59 WARN  o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: af2fc177-6c83-4c5d-abe6-3c32b519943b
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-02-03 09:23:59 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-02-03 09:23:59 INFO  c.e.U.UserRegistrationLoginServiceModule4Application - Started UserRegistrationLoginServiceModule4Application in 0.709 seconds (process running for 274.809)
+2026-02-03 09:25:41 INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-02-03 09:25:41 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-02-03 09:25:41 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2026-02-03 09:25:41 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2026-02-03 09:25:41 INFO  c.e.U.UserRegistrationLoginServiceModule4Application - Starting UserRegistrationLoginServiceModule4Application using Java 21.0.9 with PID 6168 (C:\Users\vivek.kumar\Desktop\Assignment\User-Registration-Login-Service-module-4\target\classes started by vivek.kumar in C:\Users\vivek.kumar\Desktop\Assignment\User-Registration-Login-Service-module-4)
+2026-02-03 09:25:41 INFO  c.e.U.UserRegistrationLoginServiceModule4Application - No active profile set, falling back to 1 default profile: "default"
+2026-02-03 09:25:41 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-02-03 09:25:41 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-03 09:25:41 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-02-03 09:25:41 INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-03 09:25:41 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+2026-02-03 09:25:41 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3629fb10
+2026-02-03 09:25:41 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+2026-02-03 09:25:41 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/UserRegistration-module-4]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.44
+	Default catalog/schema: UserRegistration-module-4/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-03 09:25:41 INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-03 09:25:41 WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-03 09:25:41 WARN  o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 9d26f6e9-a6f5-4213-b263-9b24faef83af
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-02-03 09:25:41 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-02-03 09:25:41 INFO  c.e.U.UserRegistrationLoginServiceModule4Application - Started UserRegistrationLoginServiceModule4Application in 0.541 seconds (process running for 377.335)
+2026-02-03 09:25:56 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-03 09:29:23 INFO  c.e.U.UserRegistrationLoginServiceModule4Application - Starting UserRegistrationLoginServiceModule4Application using Java 21.0.9 with PID 23212 (C:\Users\vivek.kumar\Desktop\Assignment\User-Registration-Login-Service-module-4\target\classes started by vivek.kumar in C:\Users\vivek.kumar\Desktop\Assignment\User-Registration-Login-Service-module-4)
+2026-02-03 09:29:23 INFO  c.e.U.UserRegistrationLoginServiceModule4Application - No active profile set, falling back to 1 default profile: "default"
+2026-02-03 09:29:23 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-02-03 09:29:24 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-02-03 09:29:24 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-03 09:29:24 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-02-03 09:29:24 INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-03 09:29:24 INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.1.Final
+2026-02-03 09:29:25 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-03 09:29:25 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5c0e5ba0
+2026-02-03 09:29:25 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-03 09:29:25 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/UserRegistration-module-4]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.44
+	Default catalog/schema: UserRegistration-module-4/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-03 09:29:26 INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-03 09:29:27 WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-03 09:29:27 WARN  o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: bf975961-2254-4da2-b198-83dfb5bdea44
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-02-03 09:29:27 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-02-03 09:29:27 WARN  o.s.b.w.s.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-02-03 09:29:27 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-03 09:29:27 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-02-03 09:29:27 ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2026-02-03 09:32:45 INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-02-03 09:32:45 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-02-03 09:32:45 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+2026-02-03 09:32:45 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+2026-02-03 09:32:45 INFO  c.e.U.UserRegistrationLoginServiceModule4Application - Starting UserRegistrationLoginServiceModule4Application using Java 21.0.9 with PID 6168 (C:\Users\vivek.kumar\Desktop\Assignment\User-Registration-Login-Service-module-4\target\classes started by vivek.kumar in C:\Users\vivek.kumar\Desktop\Assignment\User-Registration-Login-Service-module-4)
+2026-02-03 09:32:45 INFO  c.e.U.UserRegistrationLoginServiceModule4Application - No active profile set, falling back to 1 default profile: "default"
+2026-02-03 09:32:46 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-02-03 09:32:46 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-03 09:32:46 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-02-03 09:32:46 INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-03 09:32:46 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
+2026-02-03 09:32:46 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@528972
+2026-02-03 09:32:46 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Start completed.
+2026-02-03 09:32:46 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/UserRegistration-module-4]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.44
+	Default catalog/schema: UserRegistration-module-4/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-03 09:32:46 INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-03 09:32:46 WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-03 09:32:46 WARN  o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 5ff744a8-5c09-4fc0-84d9-bf5e260a5781
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-02-03 09:32:46 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-02-03 09:32:46 INFO  c.e.U.UserRegistrationLoginServiceModule4Application - Started UserRegistrationLoginServiceModule4Application in 0.99 seconds (process running for 802.282)
+2026-02-03 09:33:15 INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-02-03 09:33:16 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-02-03 09:33:16 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown initiated...
+2026-02-03 09:33:16 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown completed.
+2026-02-03 09:33:16 INFO  c.e.U.UserRegistrationLoginServiceModule4Application - Starting UserRegistrationLoginServiceModule4Application using Java 21.0.9 with PID 6168 (C:\Users\vivek.kumar\Desktop\Assignment\User-Registration-Login-Service-module-4\target\classes started by vivek.kumar in C:\Users\vivek.kumar\Desktop\Assignment\User-Registration-Login-Service-module-4)
+2026-02-03 09:33:16 INFO  c.e.U.UserRegistrationLoginServiceModule4Application - No active profile set, falling back to 1 default profile: "default"
+2026-02-03 09:33:16 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-02-03 09:33:16 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-03 09:33:16 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-02-03 09:33:16 INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-03 09:33:16 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Starting...
+2026-02-03 09:33:16 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@24722381
+2026-02-03 09:33:16 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Start completed.
+2026-02-03 09:33:16 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/UserRegistration-module-4]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.44
+	Default catalog/schema: UserRegistration-module-4/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-03 09:33:16 INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-03 09:33:16 WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-03 09:33:16 WARN  o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: f94ee148-1025-4278-85d8-522d5e59eda6
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-02-03 09:33:16 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-02-03 09:33:16 INFO  c.e.U.UserRegistrationLoginServiceModule4Application - Started UserRegistrationLoginServiceModule4Application in 0.482 seconds (process running for 832.127)
+2026-02-03 09:33:55 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-03 09:34:13 INFO  c.e.U.UserRegistrationLoginServiceModule4Application - Starting UserRegistrationLoginServiceModule4Application using Java 21.0.9 with PID 6584 (C:\Users\vivek.kumar\Desktop\Assignment\User-Registration-Login-Service-module-4\target\classes started by vivek.kumar in C:\Users\vivek.kumar\Desktop\Assignment\User-Registration-Login-Service-module-4)
+2026-02-03 09:34:13 INFO  c.e.U.UserRegistrationLoginServiceModule4Application - No active profile set, falling back to 1 default profile: "default"
+2026-02-03 09:34:13 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-02-03 09:34:15 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-02-03 09:34:15 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-03 09:34:15 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-02-03 09:34:15 INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-03 09:34:15 INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.1.Final
+2026-02-03 09:34:15 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-03 09:34:16 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@50d8ce4d
+2026-02-03 09:34:16 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-03 09:34:16 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/UserRegistration-module-4]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.44
+	Default catalog/schema: UserRegistration-module-4/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-03 09:34:16 INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-03 09:34:17 WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-03 09:34:17 WARN  o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 3f1f56ed-9194-451a-b92c-ab8e122f1489
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-02-03 09:34:17 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-02-03 09:34:17 INFO  c.e.U.UserRegistrationLoginServiceModule4Application - Started UserRegistrationLoginServiceModule4Application in 4.602 seconds (process running for 5.08)
+2026-02-03 09:34:29 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-03 09:35:11 INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-02-03 09:35:11 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-02-03 09:35:11 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-03 09:35:11 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-02-03 09:35:11 INFO  c.e.U.UserRegistrationLoginServiceModule4Application - Starting UserRegistrationLoginServiceModule4Application using Java 21.0.9 with PID 6584 (C:\Users\vivek.kumar\Desktop\Assignment\User-Registration-Login-Service-module-4\target\classes started by vivek.kumar in C:\Users\vivek.kumar\Desktop\Assignment\User-Registration-Login-Service-module-4)
+2026-02-03 09:35:11 INFO  c.e.U.UserRegistrationLoginServiceModule4Application - No active profile set, falling back to 1 default profile: "default"
+2026-02-03 09:35:12 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-02-03 09:35:12 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-03 09:35:12 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-02-03 09:35:12 INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-03 09:35:12 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2026-02-03 09:35:12 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2e50f3ca
+2026-02-03 09:35:12 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2026-02-03 09:35:12 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/UserRegistration-module-4]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.44
+	Default catalog/schema: UserRegistration-module-4/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-03 09:35:12 INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-03 09:35:12 WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-03 09:35:12 WARN  o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: f0ee946d-ff28-427f-ad90-5f218dae1afb
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-02-03 09:35:12 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-02-03 09:35:12 INFO  c.e.U.UserRegistrationLoginServiceModule4Application - Started UserRegistrationLoginServiceModule4Application in 0.89 seconds (process running for 60.192)
+2026-02-03 09:35:16 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-03 09:35:16 WARN  c.e.U.e.h.GlobalExceptionHandler - Validation failed for fields: [password]
+2026-02-03 09:35:16 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.User_Registration_Login_Service.dto.response.UserResponse> com.example.User_Registration_Login_Service.controller.UserController.registerUser(com.example.User_Registration_Login_Service.dto.request.UserRegistrationRequest): [Field error in object 'userRegistrationRequest' on field 'password': rejected value [vivek]; codes [Size.userRegistrationRequest.password,Size.password,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userRegistrationRequest.password,password]; arguments []; default message [password],2147483647,6]; default message [Password must be at least 6 characters]] ]
+2026-02-03 09:35:58 INFO  c.e.U.service.imp.UserServiceImpl - User registration attempt for username: vivekkumar
+2026-02-03 09:35:59 INFO  c.e.U.service.imp.UserServiceImpl - User registered successfully with userId: 1
+2026-02-03 09:37:22 WARN  c.e.U.e.h.GlobalExceptionHandler - Validation failed for fields: [username]
+2026-02-03 09:37:22 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.User_Registration_Login_Service.dto.response.UserResponse> com.example.User_Registration_Login_Service.controller.UserController.loginUser(com.example.User_Registration_Login_Service.dto.request.UserLoginRequest): [Field error in object 'userLoginRequest' on field 'username': rejected value [null]; codes [NotBlank.userLoginRequest.username,NotBlank.username,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userLoginRequest.username,username]; arguments []; default message [username]]; default message [Username is required]] ]
+2026-02-03 09:37:32 INFO  c.e.U.service.imp.UserServiceImpl - Login attempt for username: vivekkumar
+2026-02-03 09:37:32 INFO  c.e.U.service.imp.UserServiceImpl - Login successful for userId: 1
+2026-02-03 09:40:11 INFO  c.e.U.service.imp.UserServiceImpl - User registration attempt for username: viraj
+2026-02-03 09:40:11 INFO  c.e.U.service.imp.UserServiceImpl - User registered successfully with userId: 2
+2026-02-03 09:45:10 INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-02-03 09:45:10 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-02-03 09:45:10 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2026-02-03 09:45:10 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2026-02-03 09:45:10 INFO  c.e.U.UserRegistrationLoginServiceModule4Application - Starting UserRegistrationLoginServiceModule4Application using Java 21.0.9 with PID 6584 (C:\Users\vivek.kumar\Desktop\Assignment\User-Registration-Login-Service-module-4\target\classes started by vivek.kumar in C:\Users\vivek.kumar\Desktop\Assignment\User-Registration-Login-Service-module-4)
+2026-02-03 09:45:10 INFO  c.e.U.UserRegistrationLoginServiceModule4Application - No active profile set, falling back to 1 default profile: "default"
+2026-02-03 09:45:10 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-02-03 09:45:10 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-03 09:45:10 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-02-03 09:45:11 INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-03 09:45:11 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2026-02-03 09:45:11 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@43dcb076
+2026-02-03 09:45:11 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2026-02-03 09:45:11 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/UserRegistration-module-4]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.44
+	Default catalog/schema: UserRegistration-module-4/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-03 09:45:11 INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-03 09:45:11 WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-03 09:45:11 WARN  o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: a26c64ae-b3cf-4306-b9ca-fe19ddcb5e42
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-02-03 09:45:11 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-02-03 09:45:11 INFO  c.e.U.UserRegistrationLoginServiceModule4Application - Started UserRegistrationLoginServiceModule4Application in 1.223 seconds (process running for 658.934)
+2026-02-03 09:45:41 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-03 09:45:41 WARN  c.e.U.e.h.GlobalExceptionHandler - Validation failed for fields: [email]
+2026-02-03 09:45:41 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.User_Registration_Login_Service.dto.response.UserResponse> com.example.User_Registration_Login_Service.controller.UserController.registerUser(com.example.User_Registration_Login_Service.dto.request.UserRegistrationRequest): [Field error in object 'userRegistrationRequest' on field 'email': rejected value [gopal@examplecom]; codes [Pattern.userRegistrationRequest.email,Pattern.email,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userRegistrationRequest.email,email]; arguments []; default message [email],[Ljakarta.validation.constraints.Pattern$Flag;@7f0fd389,.*@gmail\.com$]; default message [Email must end with @gmail.com]] ]
+2026-02-03 09:45:56 INFO  c.e.U.service.imp.UserServiceImpl - User registration attempt for username: gopalk
+2026-02-03 09:45:56 INFO  c.e.U.service.imp.UserServiceImpl - User registered successfully with userId: 3
+2026-02-03 09:46:10 INFO  c.e.U.service.imp.UserServiceImpl - Login attempt for username: gopalk
+2026-02-03 09:46:10 INFO  c.e.U.service.imp.UserServiceImpl - Login successful for userId: 3
+2026-02-03 10:26:18 WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Thread starvation or clock leap detected (housekeeper delta=35m7s42ms592µs200ns).
+2026-02-03 10:26:46 INFO  c.e.U.service.imp.UserServiceImpl - Login attempt for username: gopalk
+2026-02-03 10:26:46 INFO  c.e.U.service.imp.UserServiceImpl - Login successful for userId: 3
+2026-02-03 10:27:00 INFO  c.e.U.service.imp.UserServiceImpl - Login attempt for username: gopalk
+2026-02-03 10:27:00 WARN  c.e.U.service.imp.UserServiceImpl - Login failed: Invalid credentials for username [gopalk]
+2026-02-03 10:27:00 WARN  c.e.U.e.h.GlobalExceptionHandler - User login failed: Invalid credentials
+2026-02-03 10:27:00 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.example.User_Registration_Login_Service.exception.bussiness.UserNotFoundException: Invalid credentials]
+2026-02-03 10:27:12 INFO  c.e.U.service.imp.UserServiceImpl - Login attempt for username: gopal
+2026-02-03 10:27:12 WARN  c.e.U.service.imp.UserServiceImpl - Login failed: User not found [gopal]
+2026-02-03 10:27:12 WARN  c.e.U.e.h.GlobalExceptionHandler - User login failed: User not found
+2026-02-03 10:27:12 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.example.User_Registration_Login_Service.exception.bussiness.UserNotFoundException: User not found]
+2026-02-03 10:30:35 INFO  c.e.U.service.imp.UserServiceImpl - Login attempt for username: gopal
+2026-02-03 10:30:35 WARN  c.e.U.service.imp.UserServiceImpl - Login failed: User not found [gopal]
+2026-02-03 10:30:35 WARN  c.e.U.e.h.GlobalExceptionHandler - User login failed: User not found
+2026-02-03 10:30:35 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.example.User_Registration_Login_Service.exception.bussiness.UserNotFoundException: User not found]
+2026-02-03 10:30:41 INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2026-02-03 10:30:41 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2026-02-03 10:30:41 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2026-02-03 10:30:41 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
