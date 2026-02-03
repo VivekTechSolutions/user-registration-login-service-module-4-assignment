@@ -20,7 +20,9 @@ public class UserController {
         this.userService = userService;
     }
 
+    // -------------------------
     // Register user
+    // -------------------------
     @PostMapping("/register")
     public ResponseEntity<UserResponse> registerUser(
             @Valid @RequestBody UserRegistrationRequest request) {
@@ -29,7 +31,9 @@ public class UserController {
         return ResponseEntity.status(201).body(response);
     }
 
+    // -------------------------
     // Login user
+    // -------------------------
     @PostMapping("/login")
     public ResponseEntity<UserResponse> loginUser(
             @Valid @RequestBody UserLoginRequest request) {

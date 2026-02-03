@@ -1,0 +1,67 @@
+2026-02-01 05:22:02 WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9h25m10s407ms666µs300ns).
+2026-02-01 05:38:20 WARN  c.e.U.e.h.GlobalExceptionHandler - Validation failed for fields: [username]
+2026-02-01 05:38:43 WARN  c.e.U.e.h.GlobalExceptionHandler - Validation failed for fields: [username]
+2026-02-01 05:38:46 WARN  c.e.U.e.h.GlobalExceptionHandler - Validation failed for fields: [username]
+2026-02-01 05:38:53 WARN  c.e.U.e.h.GlobalExceptionHandler - Validation failed for fields: [username]
+2026-02-01 05:39:09 INFO  c.e.U.service.imp.UserServiceImpl - Login attempt for username: vivekkumar
+2026-02-01 05:39:09 WARN  c.e.U.service.imp.UserServiceImpl - Login failed: User not found [vivekkumar]
+2026-02-01 05:39:09 WARN  c.e.U.e.h.GlobalExceptionHandler - User login failed: User not found
+2026-02-01 05:39:11 INFO  c.e.U.service.imp.UserServiceImpl - Login attempt for username: vivekkumar
+2026-02-01 05:39:11 WARN  c.e.U.service.imp.UserServiceImpl - Login failed: User not found [vivekkumar]
+2026-02-01 05:39:11 WARN  c.e.U.e.h.GlobalExceptionHandler - User login failed: User not found
+2026-02-01 05:40:44 INFO  c.e.U.service.imp.UserServiceImpl - Login attempt for username: vivek singh
+2026-02-01 05:40:44 INFO  c.e.U.service.imp.UserServiceImpl - Login successful for userId: 2
+2026-02-01 05:45:35 WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m34s978ms436µs400ns).
+2026-02-01 05:57:31 INFO  c.e.U.service.imp.UserServiceImpl - Login attempt for username: vivek singh
+2026-02-01 05:57:31 INFO  c.e.U.service.imp.UserServiceImpl - Login successful for userId: 2
+2026-02-01 06:05:45 INFO  c.e.U.UserRegistrationLoginServiceModule4Application - Starting UserRegistrationLoginServiceModule4Application using Java 21.0.9 with PID 16736 (C:\Users\vivek.kumar\Desktop\Assignment\User-Registration-Login-Service-module-4\target\classes started by vivek.kumar in C:\Users\vivek.kumar\Desktop\Assignment\User-Registration-Login-Service-module-4)
+2026-02-01 06:05:45 INFO  c.e.U.UserRegistrationLoginServiceModule4Application - No active profile set, falling back to 1 default profile: "default"
+2026-02-01 06:05:45 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.0.1.Final
+2026-02-01 06:05:46 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-02-01 06:05:47 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-01 06:05:47 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-02-01 06:05:47 INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-01 06:05:47 INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.1.Final
+2026-02-01 06:05:48 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-01 06:05:48 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6e4e60f5
+2026-02-01 06:05:48 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-01 06:05:49 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/UserRegistration-module-4]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.44
+	Default catalog/schema: UserRegistration-module-4/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-01 06:05:50 INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-01 06:05:50 WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-01 06:05:51 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-02-01 06:05:51 WARN  o.s.b.w.s.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-02-01 06:05:51 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-01 06:05:51 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-02-01 06:05:51 ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2026-02-01 06:06:00 INFO  c.e.U.service.imp.UserServiceImpl - Login attempt for username: vivek singh
+2026-02-01 06:06:00 INFO  c.e.U.service.imp.UserServiceImpl - Login successful for userId: 2
+2026-02-01 06:07:21 INFO  c.e.U.service.imp.UserServiceImpl - Login attempt for username: vivek singh
+2026-02-01 06:07:21 WARN  c.e.U.service.imp.UserServiceImpl - Login failed: Invalid credentials for username [vivek singh]
+2026-02-01 06:07:21 WARN  c.e.U.e.h.GlobalExceptionHandler - User login failed: Invalid credentials
+2026-02-01 06:18:35 INFO  c.e.U.service.imp.UserServiceImpl - Login attempt for username: vivek singh
+2026-02-01 06:18:35 WARN  c.e.U.service.imp.UserServiceImpl - Login failed: Invalid credentials for username [vivek singh]
+2026-02-01 06:18:35 WARN  c.e.U.e.h.GlobalExceptionHandler - User login failed: Invalid credentials
