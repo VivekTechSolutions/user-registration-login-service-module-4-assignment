@@ -1,0 +1,6 @@
+2026-02-04 12:42:06 ERROR c.e.U.service.imp.UserServiceImpl - Registration failed: Username already exists [gopalk]
+2026-02-04 12:42:55 ERROR c.e.U.service.imp.UserServiceImpl - Registration failed: Username already exists [gopalk]
+2026-02-04 12:52:13 ERROR c.e.U.service.imp.UserServiceImpl - Login failed: User not found [gopal5]
+2026-02-04 13:02:05 ERROR c.e.U.service.imp.UserServiceImpl - Login failed: User not found [gopal]
+2026-02-04 13:03:39 ERROR c.e.U.service.imp.UserServiceImpl - Registration failed: Username already exists [gopalk]
+2026-02-04 13:03:46 ERROR c.e.U.service.imp.UserServiceImpl - Registration failed: Email already exists [gopal@gmail.com]

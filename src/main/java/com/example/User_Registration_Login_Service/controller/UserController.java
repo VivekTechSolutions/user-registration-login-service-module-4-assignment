@@ -1,5 +1,7 @@
 package com.example.User_Registration_Login_Service.controller;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -14,6 +16,8 @@ import jakarta.validation.Valid;
 @RequestMapping("/api/users")
 public class UserController {
 
+    private static final Logger logger = LoggerFactory.getLogger(UserController.class);
+
     private final UserService userService;
 
     public UserController(UserService userService) {
@@ -27,7 +31,14 @@ public class UserController {
     public ResponseEntity<UserResponse> registerUser(
             @Valid @RequestBody UserRegistrationRequest request) {
 
+        // INFO: Log incoming registration request (without sensitive data)
+        logger.info("Incoming registration request for username: {}", request.getUsername());
+
         UserResponse response = userService.registerUser(request);
+
+        // INFO: Log successful registration
+        logger.info("Registration successful for userId: {}", response.getId());
+
         return ResponseEntity.status(201).body(response);
     }
 
@@ -38,7 +49,14 @@ public class UserController {
     public ResponseEntity<UserResponse> loginUser(
             @Valid @RequestBody UserLoginRequest request) {
 
+        // INFO: Log incoming login attempt
+        logger.info("Incoming login request for username: {}", request.getUsername());
+
         UserResponse response = userService.loginUser(request);
+
+        // INFO: Log successful login
+        logger.info("Login successful for userId: {}", response.getId());
+
         return ResponseEntity.ok(response);
     }
 }

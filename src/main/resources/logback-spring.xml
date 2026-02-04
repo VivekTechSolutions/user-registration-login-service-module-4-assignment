@@ -3,7 +3,6 @@
 
     <!-- ========================= -->
     <!-- Properties -->
-    <!-- Logs will be created in project-root/logs -->
     <!-- ========================= -->
     <property name="LOG_PATH" value="./logs"/>
     <property name="APP_NAME" value="user-registration-login-service"/>
@@ -13,90 +12,63 @@
     <!-- ========================= -->
     <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
-            <pattern>
-                %d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n
-            </pattern>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n</pattern>
         </encoder>
     </appender>
 
     <!-- ========================= -->
-    <!-- File Appender (ALL LOGS) -->
+    <!-- File Appender (ALL logs) -->
     <!-- ========================= -->
-    <appender name="FILE"
-              class="ch.qos.logback.core.rolling.RollingFileAppender">
-
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>${LOG_PATH}/${APP_NAME}.log</file>
-
-        <rollingPolicy
-                class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>
-                ${LOG_PATH}/${APP_NAME}.%d{yyyy-MM-dd}.log
-            </fileNamePattern>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_PATH}/${APP_NAME}.%d{yyyy-MM-dd}.log</fileNamePattern>
             <maxHistory>30</maxHistory>
         </rollingPolicy>
-
         <encoder>
-            <pattern>
-                %d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n
-            </pattern>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n</pattern>
         </encoder>
     </appender>
 
     <!-- ========================= -->
-    <!-- ERROR File Appender -->
+    <!-- ERROR File Appender (ERROR ONLY) -->
     <!-- ========================= -->
-    <appender name="ERROR_FILE"
-              class="ch.qos.logback.core.rolling.RollingFileAppender">
-
+    <appender name="ERROR_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>${LOG_PATH}/${APP_NAME}-error.log</file>
 
-        <filter
-                class="ch.qos.logback.classic.filter.LevelFilter">
+        <!-- Use ThresholdFilter to catch ERROR and above -->
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
             <level>ERROR</level>
-            <onMatch>ACCEPT</onMatch>
-            <onMismatch>DENY</onMismatch>
         </filter>
 
-        <rollingPolicy
-                class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>
-                ${LOG_PATH}/${APP_NAME}-error.%d{yyyy-MM-dd}.log
-            </fileNamePattern>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_PATH}/${APP_NAME}-error.%d{yyyy-MM-dd}.log</fileNamePattern>
             <maxHistory>30</maxHistory>
         </rollingPolicy>
 
         <encoder>
-            <pattern>
-                %d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n
-            </pattern>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n</pattern>
         </encoder>
     </appender>
 
     <!-- ========================= -->
-    <!-- ASYNC Appender -->
+    <!-- ASYNC Appender for main logs -->
     <!-- ========================= -->
-    <appender name="ASYNC_FILE"
-              class="ch.qos.logback.classic.AsyncAppender">
-
+    <appender name="ASYNC_FILE" class="ch.qos.logback.classic.AsyncAppender">
         <queueSize>512</queueSize>
         <discardingThreshold>0</discardingThreshold>
         <neverBlock>true</neverBlock>
 
         <appender-ref ref="FILE"/>
-        <appender-ref ref="ERROR_FILE"/>
     </appender>
 
     <!-- ========================= -->
-    <!-- Log Levels by Package -->
+    <!-- Package-wise Log Levels -->
     <!-- ========================= -->
-
-    <!-- Service layer -->
-    <logger name="com.example.User_Registration_Login_Service.service"
-            level="INFO"/>
-
-    <!-- Exception layer -->
-    <logger name="com.example.User_Registration_Login_Service.exception"
-            level="WARN"/>
+    <logger name="com.example.User_Registration_Login_Service.controller" level="INFO"/>
+    <logger name="com.example.User_Registration_Login_Service.service" level="INFO"/>
+    <logger name="com.example.User_Registration_Login_Service.repository" level="WARN"/>
+    <logger name="com.example.User_Registration_Login_Service.exception" level="WARN"/>
 
     <!-- Reduce framework noise -->
     <logger name="org.springframework" level="WARN"/>
@@ -108,6 +80,7 @@
     <root level="INFO">
         <appender-ref ref="CONSOLE"/>
         <appender-ref ref="ASYNC_FILE"/>
+        <appender-ref ref="ERROR_FILE"/> <!-- ERROR logs go directly to error file -->
     </root>
 
 </configuration>
