@@ -17,7 +17,6 @@ import com.example.User_Registration_Login_Service.service.UserService;
 @Service
 public class UserServiceImpl implements UserService {
 
-    // Logger used to track application flow and important events without logging sensitive data
     private static final Logger logger = LoggerFactory.getLogger(UserServiceImpl.class);
 
     private final UserRepository userRepository;
@@ -30,20 +29,22 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public UserResponse registerUser(UserRegistrationRequest request) {
-
-        // Logs user registration attempt for traceability
+        // INFO: Normal application flow - user registration attempt
         logger.info("User registration attempt for username: {}", request.getUsername());
 
+        // ERROR: Operation fails because username already exists
         if (userRepository.existsByUsername(request.getUsername())) {
-            logger.warn("Registration failed: Username already exists [{}]", request.getUsername());
+            logger.error("Registration failed: Username already exists [{}]", request.getUsername());
             throw new UserAlreadyExistsException("Username already exists");
         }
 
+        // ERROR: Operation fails because email already exists
         if (userRepository.existsByEmail(request.getEmail())) {
-            logger.warn("Registration failed: Email already exists [{}]", request.getEmail());
+            logger.error("Registration failed: Email already exists [{}]", request.getEmail());
             throw new UserAlreadyExistsException("Email already exists");
         }
 
+        // Encode password before saving
         String encodedPassword = passwordEncoder.encode(request.getPassword());
 
         User user = new User(
@@ -54,7 +55,7 @@ public class UserServiceImpl implements UserService {
 
         User savedUser = userRepository.save(user);
 
-        // Logs successful registration event with generated user ID
+        // INFO: Registration successful
         logger.info("User registered successfully with userId: {}", savedUser.getId());
 
         return new UserResponse(
@@ -66,21 +67,23 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public UserResponse loginUser(UserLoginRequest request) {
-
-        // Logs login attempt using username (password is never logged)
+        // INFO: Normal application flow - login attempt
         logger.info("Login attempt for username: {}", request.getUsername());
 
+        // ERROR: User not found
         User user = userRepository.findByUsername(request.getUsername())
                 .orElseThrow(() -> {
-                    logger.warn("Login failed: User not found [{}]", request.getUsername());
+                    logger.error("Login failed: User not found [{}]", request.getUsername());
                     return new UserNotFoundException("User not found");
                 });
 
+        // WARN: Invalid credentials (user exists but password does not match)
         if (!passwordEncoder.matches(request.getPassword(), user.getPassword())) {
             logger.warn("Login failed: Invalid credentials for username [{}]", request.getUsername());
             throw new UserNotFoundException("Invalid credentials");
         }
 
+        // INFO: Login successful
         logger.info("Login successful for userId: {}", user.getId());
 
         return new UserResponse(
